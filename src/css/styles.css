@@ -111,14 +111,19 @@ main {
 
 .container .profile-data .info h1{
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-weight: 700;
+}
+.container .profile-data .info div{
+  font-size: 15px;
+ 
 }
 
 .container .profile-data .info p{
-  font-size: 15px;  
+  font-size: 18px;  
   font-weight: 400;
   line-height: 23px;
+  margin-top: 15px;
 }
 
 /* REPOSITORIES */
@@ -146,6 +151,20 @@ main {
 .container .profile-data .repositories ul li a:hover{
   background-color:hotpink;
   color: #fff
+}
+
+.container .profile-data .events{
+  padding: 0px;
+
+}
+
+.container .profile-data .events h2{
+  margin-bottom: 30px;
+}
+
+.container .profile-data .events ul li span{
+  font-weight: bold;
+
 }
 
 .container .profile-data.hide{
