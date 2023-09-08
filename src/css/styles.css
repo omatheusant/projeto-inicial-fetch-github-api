@@ -166,6 +166,11 @@ main {
   font-weight: bold;
 
 }
+.container .profile-data .events ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
 .container .profile-data.hide{
   display: none;

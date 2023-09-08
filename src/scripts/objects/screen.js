@@ -23,13 +23,13 @@ const screen = {
         }
 
         let eventsItens = ''
-        user.events.forEach(event => {
-            console.log(event.payload)
-            event.payload.commits.forEach(commit =>{
-                console.log(commit.message)
-            })
-            eventsItens += `<li><span>${event.repo.name}</span> — ${event.payload.commits.message}</li>`
-        })
+        user.events.forEach(event =>{
+            if(event.payload.commits){
+                eventsItens += `<li><span>${event.repo.name}</span> — ${event.payload.commits[0].message}</li>`
+            } else {
+                eventsItens += `<li><span>${event.repo.name}</span> — Não possui mensagem`
+            }
+        } )
         if(user.events.length > 0){
             this.userProfile.innerHTML += `<div class="events section">
             <h2>Eventos</h2>

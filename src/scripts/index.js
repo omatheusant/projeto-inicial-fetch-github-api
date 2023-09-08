@@ -53,5 +53,3 @@ async function getUserData (userName){
 
 }
 
-getUserData('devemdobro')
-
