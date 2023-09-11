@@ -5,7 +5,4 @@ async function getEvents(userName){
     return await response.json()
 }
 
-console.log(getEvents('devemdobro'))
-
-
 export { getEvents }

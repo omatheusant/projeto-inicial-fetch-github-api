@@ -119,6 +119,10 @@ main {
  
 }
 
+.container .profile-data .info .follow-info{
+  margin-top: 15px;
+}
+
 .container .profile-data .info p{
   font-size: 18px;  
   font-weight: 400;
@@ -148,13 +152,23 @@ main {
   transition: 0.3s ease-in-out;
 }
 
+.container .profile-data .repositories ul li span{
+    margin: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: rgb(141, 84, 141);
+    color: white;
+}
+
 .container .profile-data .repositories ul li a:hover{
   background-color:hotpink;
   color: #fff
 }
 
 .container .profile-data .events{
-  padding: 0px;
+  padding: 10px;
+  background-color: #fff9f6;
+  border-radius: 5px;
 
 }
 
